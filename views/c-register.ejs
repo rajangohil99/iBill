@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/details/css7">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Consumer Register</p>
+    <div class="artical" align="center">
+      <% include ./partials/messages %>
+    </div>
+  
+    <form action="/users/consumersregister" method="POST">
+      <input class="un " id="name" name="name" type="text" align="center" placeholder="Name">
+      <input class="un " id="email" name="email" type="text" align="center" placeholder="Email">
+      <input class="pass" id="password" name="password" type="password" align="center" placeholder="Password">
+      <input class="pass" id="password2" name="password2" type="password" align="center" placeholder="Confirm Password">
+      <button id="signup" class="btn btn-lg btn-primary btn-block text-uppercase submit" align="center" type="submit">
+        Register
+      </button> 
+     
+      <p class="forgot" align="center"><a href="/users/consumerslogin">Login as Consumer</p>
+       
+      </form>
+    </div>
+  </body>
+  
+<html>

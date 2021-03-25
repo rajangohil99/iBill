@@ -1,0 +1,327 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.card-signin {
+  border: 0;
+  width: 500px;
+  height: 700px;
+  border-radius: 8rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.card-signin .card-title {
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+
+}
+
+
+
+
+
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+p{
+  text-align: right;
+  position: relative;
+
+}
+
+
+#wrapper label{
+  color: rgb(64, 92, 96);
+  position: relative;
+
+}
+
+
+/* form başlangıç stiller ------------------------------- */
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.form-label-group input {
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+
+ 
+}
+/*after clicking on fields box will not appear*/
+.form-label-group input:focus {
+    outline: none;
+}
+/* LABEL ======================================= */
+
+.form-label-group label {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+     pointer-events: none;
+    left: 5px;
+    top: 5px;
+    transition: 0.2s ease all;
+
+
+
+}
+/* for eg email will not appear while inputing email */
+
+.form-label-group input:focus ~ label,
+input:valid ~ label {
+   
+    font-size: 14px;
+    color: black;
+}
+/* BOTTOM BARS ================================= */
+
+.span-input {
+   
+    position: relative;
+    top: -5px;
+
+}
+
+
+#line1{
+  margin: auto;
+  text-align: center;
+}
+#signupp{
+    margin: auto;
+  text-align: center;
+
+}
+#signupp a{
+    color: black;
+    font-size: 12px;
+}
+
+button{
+    margin: auto;
+  text-align: center;
+}
+hr{
+  margin-top: 0px;
+}
+
+.form-signin hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-body img{
+  margin-left: 80px;
+  margin-top: 3px;
+}
+#login button{
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-group label{
+  padding: 5px;
+
+}
+
+.search-container {
+  float: right;
+  margin-left: 740px;
+ 
+}
+
+.collapse input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+    border:5px solid black;
+}
+
+.search-container button {
+  float: right;
+  margin-top: 8px;
+  
+  border:5px solid black;
+  height: 47px;
+  width: 40px;
+  margin-bottom: 1px;
+}
+
+.search-container button:hover {
+  background: white;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+	background: black;
+	padding: 0 0 30px 0;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 50px;
+	
+  }
+  
+  #footer .footer-top {
+	background: #0c1817;
+	border-bottom: 1px solid #18302c;
+	padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+	font-size: 24px;
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #1c3733;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: #1bac91;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: #4ae3c6;
+	font-size: 18px;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #fff;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	color: #34dfbf;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+	margin-top: 30px;
+	background: #fff;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 4px 0 0 4px;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="email"] {
+	border: 0;
+	padding: 4px;
+	width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: -4px;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #1bac91;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+	background: #14806c;
+  }
+  
+  #footer .copyright {
+	text-align: center;
+	padding-top: 30px;
+  }
+  
+  #footer .credits {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+  }
+  

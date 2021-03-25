@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>Company Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>GST</th>
+          <th>Billing Address</th>
+          <th>action</th>
+        </tr>
+        <% records.forEach (function(row) {%> 
+        <tr>
+          <td><%= row.cname %></td>
+          <td><%= row.cemail %></td>
+          <td><%= row.cphone %></td>
+          <td><%= row.cgstnumber %></td>
+          <td><%= row.cbilling %></td>
+          <td><a class="btn btn-primary btn-xs" href="/edit/<%= row._id %>"><i class="fa fa-edit"></i></a>
+            <a class="btn btn-danger btn-xs" href="/delete/<%= row._id %>"><i class="fa fa-trash"></i></a>
+        </td>
+        </tr>
+        <% }) %> 
+       
+      </table>
+</body>
+
+</html>

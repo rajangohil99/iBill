@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/details/css7">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Vendor Login</p>
+    <div class="artical" align="center">
+      <% include ./partials/messages %>
+    </div>
+  
+    <form class="form1" action="/users/vendorslogin" method="POST">
+      <input class="un " id="email" name="email" type="text" align="center" placeholder="Email">
+      <input class="pass" id="password" name="password" type="password" align="center" placeholder="Password">
+      <button id="logiin" class="submit" type="submit"  align="center">Login</button> 
+      <p class="register" align="center"><a href="/users/vendorsregister">Register as Vendor</p>
+      </form>
+    </div>
+</body>
+</html>
